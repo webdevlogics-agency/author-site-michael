@@ -27,12 +27,20 @@ import { SITE_TITLE_HOME } from '~/consts'
         <div
           class='container m-auto flex h-full max-w-7xl items-center justify-center'
         >
-          <blockquote
-            class='px-6 text-3xl/loose font-semibold italic text-white'
-          >
-            "Tomorrow is going to be different than yesterday, it's going to be
-            a lot different."
-          </blockquote>
+          <figure>
+            <blockquote
+              class='px-6 text-3xl/loose font-semibold italic text-white'
+            >
+              "Tomorrow is going to be different than yesterday, it's going to
+              be a lot different."
+            </blockquote>
+            <figcaption
+              <cite
+              class='pl-10 text-xl font-bold text-secondary md:text-2xl'
+            >
+              &mdash; David Gerrold
+            </figcaption>
+          </figure>
         </div>
       </div>
     </div>
@@ -78,10 +86,10 @@ import { SITE_TITLE_HOME } from '~/consts'
     </div>
   </section>
   <section id='events'>
-    <div class='container m-auto max-w-7xl px-6 py-12'>
+    <div class='container m-auto max-w-7xl space-y-8 px-6 py-12'>
+      <h3 class='text-center text-3xl'>Upcoming Events</h3>
       <div class='grid grid-cols-1 gap-4 md:grid-cols-2'>
         <div class='flex gap-6'>
-          <!-- img -->
           <Image src={book_store_1} alt='Event Book Store' class='h-64 w-64' />
           <div class='flex flex-col gap-2'>
             <p>September 6, 2023</p>
@@ -93,7 +101,6 @@ import { SITE_TITLE_HOME } from '~/consts'
           </div>
         </div>
         <div class='flex gap-6'>
-          <!-- img -->
           <Image src={book_store_2} alt='Event Book Store ' class='h-64 w-64' />
           <div class='flex flex-col gap-2'>
             <p>November 6, 2023</p>
