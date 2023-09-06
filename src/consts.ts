@@ -1,0 +1,6 @@
+export const SITE_TITLE_HOME = 'Home - Michael Shane | Author'
+export const SITE_DESCRIPTION = '#1 New Yorks Times Bestselling Author'
+export const SITE_TITLE_ABOUT = 'About - Michael Shane | Author'
+export const SITE_TITLE_CONTACT = 'Contact -Michael Shane | Author'
+export const SITE_TITLE_EVENT = 'Events - Michael Shane | Author'
+export const SITE_TITLE_BOOKS = 'Books - Michael Shane | Author'

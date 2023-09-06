@@ -1,6 +1,7 @@
 ---
 import BaseHead from '~/components/base-head.astro'
-
+import Header from '~/components/header.astro'
+import Footer from '~/components/footer.astro'
 const { site_title, site_description } = Astro.props
 ---
 
@@ -9,11 +10,13 @@ const { site_title, site_description } = Astro.props
   <head>
     <BaseHead title={site_title} description={site_description} />
   </head>
-  <body class='scroll-smooth text-base'>
+  <body class='m-auto flex min-h-screen flex-col scroll-smooth text-base'>
     <!-- HEADER -->
-    <main class='space-y-24 py-32'>
+    <Header />
+    <main class='flex-grow'>
       <slot />
     </main>
+    <Footer />
     <!-- FOOTER -->
   </body>
 </html>

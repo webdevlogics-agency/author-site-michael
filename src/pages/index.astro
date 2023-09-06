@@ -1,11 +1,110 @@
 ---
-import BaseLayout from "~/layouts/base-layout.astro";
+import { Image } from 'astro:assets'
+
+import BaseLayout from '~/layouts/base-layout.astro'
+
+import {
+  book_dorian_gray,
+  book_goal_planner,
+  book_psychology_money,
+  book_two_towers,
+  book_store_1,
+  book_store_2,
+} from '~/assets'
+
+import { SITE_TITLE_HOME } from '~/consts'
 ---
-<BaseLayout>
+
+<BaseLayout site_title={SITE_TITLE_HOME}>
   <section id='hero-main'>
-    <!-- IMG -->
-    <!-- TEXT -->
-    <p class='text-3xl text-sky-400'>'Tomorrow is going to be different than yesterday,'</p>
-    <p>it's going to be a lot different.</p>
+    <!-- Background Img -->
+    <div
+      class='relative h-[525px] overflow-hidden bg-hero-pattern bg-cover bg-center bg-no-repeat p-12 text-center'
+    >
+      <div
+        class='absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed'
+      >
+        <div
+          class='container m-auto flex h-full max-w-7xl items-center justify-center'
+        >
+          <blockquote
+            class='px-6 text-3xl/loose font-semibold italic text-white'
+          >
+            "Tomorrow is going to be different than yesterday, it's going to be
+            a lot different."
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id='books-list'>
+    <div class='container m-auto max-w-7xl px-6 py-12'>
+      <div class='grid grid-cols-2 gap-4 text-center md:grid-cols-4'>
+        <!-- TODO BREAK INTO COMPONENT CARDS -->
+        <div class='max-w-sm border p-6'>
+          <Image
+            src={book_psychology_money}
+            alt='The Psychology of Money by Morgan Housel'
+            class='h-auto w-[250px]'
+          />
+          <p class='pt-6 text-sm'>The Picture of Dorian Gray</p>
+        </div>
+        <div class='max-w-sm border p-6'>
+          <Image
+            src={book_dorian_gray}
+            alt='The Picture of Dorian Gray by Oscar Wilde'
+            class='h-auto w-[250px]'
+          />
+          <p class='pt-6 text-sm'>The Picture of Dorian Gray</p>
+        </div>
+        <div class='max-w-sm border p-6'>
+          <Image
+            src={book_goal_planner}
+            alt='Goal Planner by Ikigloo'
+            class='h-auto w-[250px]'
+          />
+          <p class='pt-6 text-sm'>Goal Planner</p>
+        </div>
+        <div class='max-w-sm border p-6'>
+          <Image
+            src={book_two_towers}
+            alt='The Two Towers by J.R.R. Tolkien'
+            class='h-auto w-[250px]'
+          />
+          <p class='pt-6 text-sm'>The Two Towers</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id='events'>
+    <div class='container m-auto max-w-7xl px-6 py-12'>
+      <div class='grid grid-cols-1 gap-4 md:grid-cols-2'>
+        <div class='flex gap-6'>
+          <!-- img -->
+          <Image src={book_store_1} alt='Event Book Store' class='h-64 w-64' />
+          <div class='flex flex-col gap-2'>
+            <p>September 6, 2023</p>
+            <h3 class='text-xl font-bold text-sky-800'>Book Signing</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+              soluta consectetur quam, ipsa nisi sapiente.
+            </p>
+          </div>
+        </div>
+        <div class='flex gap-6'>
+          <!-- img -->
+          <Image src={book_store_2} alt='Event Book Store ' class='h-64 w-64' />
+          <div class='flex flex-col gap-2'>
+            <p>November 6, 2023</p>
+            <h3 class='text-xl font-bold text-sky-800'>Book Signing</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+              soluta consectetur quam, ipsa nisi sapiente.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 </BaseLayout>

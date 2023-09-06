@@ -1,0 +1,59 @@
+---
+
+---
+
+<header id='header' class='bg-p500'>
+  <div class='container m-auto max-w-7xl p-4'>
+    <nav class='flex w-full flex-wrap items-center justify-between'>
+      <a href='/'>
+        <h1 class='text-4xl text-white'>Michael Shane</h1>
+      </a>
+      <svg
+        xmlns='http://www.w3.org/2000/svg'
+        fill='none'
+        viewBox='0 0 24 24'
+        stroke-width='1.5'
+        stroke='currentColor'
+        class='block h-6 w-6 cursor-pointer text-white md:hidden'
+        id='menu-button'
+      >
+        <path
+          stroke-linecap='round'
+          stroke-linejoin='round'
+          d='M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5'></path>
+      </svg>
+      <div id='menu' class='hidden w-full md:flex md:w-auto md:items-center'>
+        <ul class='pt-4 text-white md:flex md:justify-between md:pt-0'>
+          <li>
+            <a href='/about' class='block py-2 hover:text-red-500 md:p-4'
+              >ABOUT</a
+            >
+          </li>
+          <li>
+            <a href='/books' class='block py-2 hover:text-red-500 md:p-4'
+              >BOOKS</a
+            >
+          </li>
+          <li>
+            <a href='/events' class='block py-2 hover:text-red-500 md:p-4'
+              >EVENTS</a
+            >
+          </li>
+          <li>
+            <a href='/contact' class='block py-2 hover:text-red-500 md:p-4'
+              >CONTACT</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <script>
+    const buttonEle = document.querySelector('#menu-button')
+    const menuEle = document.querySelector('#menu')
+
+    buttonEle.addEventListener('click', () => {
+      menuEle.classList.toggle('hidden')
+    })
+  </script>
+</header>

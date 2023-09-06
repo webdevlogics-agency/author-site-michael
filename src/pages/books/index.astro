@@ -1,0 +1,106 @@
+---
+import { Image } from 'astro:assets'
+import BaseLayout from '~/layouts/base-layout.astro'
+import GridContainer from '~/components/ui/grid-container.astro'
+
+import { SITE_TITLE_BOOKS } from '~/consts'
+
+import {
+  book_dorian_gray,
+  book_goal_planner,
+  book_psychology_money,
+  book_two_towers,
+} from '~/assets'
+---
+
+<BaseLayout site_title={SITE_TITLE_BOOKS}>
+  <section id='books'>
+    <div class='container m-auto max-w-7xl space-y-28 p-12'>
+      <h1 class='text-center text-3xl'>BOOKS</h1>
+      <GridContainer>
+        <Fragment slot='section-1'>
+          <Image
+            src={book_psychology_money}
+            alt='WDL Logo'
+            class='h-96 w-auto'
+          />
+        </Fragment>
+        <Fragment slot='section-2'>
+          <p class='gradient-text text-base font-bold'>
+            The Psychology of Money
+          </p>
+          <p class='text-sm text-slate-800'>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
+            facere autem est alias nisi corrupti dicta, a consequuntur
+            laboriosam ab ipsa molestiae reiciendis delectus, commodi natus
+            adipisci sequi vel? Ipsam.
+          </p>
+          <button
+            class='rounded-full bg-p300 px-4 py-2 font-bold text-white hover:bg-p500'
+          >
+            Buy Now
+          </button>
+        </Fragment>
+      </GridContainer>
+      <GridContainer direction='lg:flex-row'>
+        <Fragment slot='section-1'>
+          <Image src={book_dorian_gray} alt='WDL Logo' class='h-96 w-auto' />
+        </Fragment>
+        <Fragment slot='section-2'>
+          <p class='gradient-text text-base font-bold'>
+            The Picture of Dorian Gray
+          </p>
+          <p class='text-sm text-slate-800'>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
+            facere autem est alias nisi corrupti dicta, a consequuntur
+            laboriosam ab ipsa molestiae reiciendis delectus, commodi natus
+            adipisci sequi vel? Ipsam.
+          </p>
+          <button
+            class='rounded-full bg-p300 px-4 py-2 font-bold text-white hover:bg-p500'
+          >
+            Buy Now
+          </button>
+        </Fragment>
+      </GridContainer>
+      <GridContainer>
+        <Fragment slot='section-1'>
+          <Image src={book_goal_planner} alt='WDL Logo' class='h-96 w-auto' />
+        </Fragment>
+        <Fragment slot='section-2'>
+          <p class='gradient-text text-base font-bold'>Goal Planner</p>
+          <p class='text-sm text-slate-800'>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
+            facere autem est alias nisi corrupti dicta, a consequuntur
+            laboriosam ab ipsa molestiae reiciendis delectus, commodi natus
+            adipisci sequi vel? Ipsam.
+          </p>
+          <button
+            class='rounded-full bg-p300 px-4 py-2 font-bold text-white hover:bg-p500'
+          >
+            Buy Now
+          </button>
+        </Fragment>
+      </GridContainer>
+      <GridContainer direction='lg:flex-row'>
+        <Fragment slot='section-1'>
+          <Image src={book_two_towers} alt='WDL Logo' class='h-96 w-auto' />
+        </Fragment>
+        <Fragment slot='section-2'>
+          <p class='gradient-text text-base font-bold'>The Two Towers</p>
+          <p class='text-sm text-slate-800'>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
+            facere autem est alias nisi corrupti dicta, a consequuntur
+            laboriosam ab ipsa molestiae reiciendis delectus, commodi natus
+            adipisci sequi vel? Ipsam.
+          </p>
+          <button
+            class='rounded-full bg-p300 px-4 py-2 font-bold text-white hover:bg-p500'
+          >
+            Buy Now
+          </button>
+        </Fragment>
+      </GridContainer>
+    </div>
+  </section>
+</BaseLayout>

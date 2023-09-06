@@ -17,6 +17,11 @@
     --primary: 208 80% 52%;
     --primary-foreground: 210 40% 98%;
 
+    /* PRIMARY HEADER AND FOOTER BACKGROUND */
+    --p500: 300 29% 12%;
+    --p300: 300 12% 38%;
+    --p100: 300 7% 68%;
+
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
