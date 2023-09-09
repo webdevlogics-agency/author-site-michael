@@ -1,5 +1,5 @@
 ---
-import { Image } from 'astro:assets'
+import { Image, getImage } from 'astro:assets'
 
 import BaseLayout from '~/layouts/base-layout.astro'
 
@@ -10,16 +10,23 @@ import {
   book_two_towers,
   book_store_1,
   book_store_2,
+  hero_pattern,
 } from '~/assets'
 
 import { SITE_TITLE_HOME } from '~/consts'
+
+const optimizedBackground = await getImage({
+  src: hero_pattern,
+  format: 'avif',
+})
 ---
 
 <BaseLayout site_title={SITE_TITLE_HOME}>
   <section id='hero-main'>
     <!-- Background Img -->
     <div
-      class='relative h-[525px] overflow-hidden bg-hero-pattern bg-cover bg-center bg-no-repeat p-12 text-center'
+      class='relative h-[525px] overflow-hidden bg-cover bg-center bg-no-repeat p-12 text-center'
+      style={`background-image: url(${optimizedBackground.src});`}
     >
       <div
         class='absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed'
