@@ -4,10 +4,10 @@ import { Image, getImage } from 'astro:assets'
 import BaseLayout from '~/layouts/base-layout.astro'
 
 import {
-  book_dorian_gray,
-  book_goal_planner,
-  book_psychology_money,
-  book_two_towers,
+  castle_in_the_sky,
+  lost_at_sea,
+  magic_bonsai,
+  money_tree,
   book_store_1,
   book_store_2,
   hero_pattern,
@@ -59,35 +59,39 @@ const optimizedBackground = await getImage({
         <!-- TODO BREAK INTO COMPONENT CARDS -->
         <div class='max-w-sm border p-6'>
           <Image
-            src={book_psychology_money}
-            alt='The Psychology of Money by Morgan Housel'
+            src={lost_at_sea}
+            alt='Lost at Sea by Michael Shane'
             class='h-auto w-[250px]'
+            format='avif'
           />
-          <p class='pt-6 text-sm'>The Picture of Dorian Gray</p>
+          <p class='pt-6 text-sm'>Lost At Sea</p>
         </div>
         <div class='max-w-sm border p-6'>
           <Image
-            src={book_dorian_gray}
-            alt='The Picture of Dorian Gray by Oscar Wilde'
+            src={magic_bonsai}
+            alt='Magic Bonsai by Michael Shane'
             class='h-auto w-[250px]'
+            format='avif'
           />
-          <p class='pt-6 text-sm'>The Picture of Dorian Gray</p>
+          <p class='pt-6 text-sm'>Magic Bonsai</p>
         </div>
         <div class='max-w-sm border p-6'>
           <Image
-            src={book_goal_planner}
-            alt='Goal Planner by Ikigloo'
+            src={castle_in_the_sky}
+            alt='Castle In The Sky by Michael Shane'
             class='h-auto w-[250px]'
+            format='avif'
           />
-          <p class='pt-6 text-sm'>Goal Planner</p>
+          <p class='pt-6 text-sm'>Castle In The Sky</p>
         </div>
         <div class='max-w-sm border p-6'>
           <Image
-            src={book_two_towers}
-            alt='The Two Towers by J.R.R. Tolkien'
+            src={money_tree}
+            alt='Money Tree by Michael Shane'
             class='h-auto w-[250px]'
+            format='avif'
           />
-          <p class='pt-6 text-sm'>The Two Towers</p>
+          <p class='pt-6 text-sm'>Money Tree</p>
         </div>
       </div>
     </div>
@@ -97,24 +101,36 @@ const optimizedBackground = await getImage({
       <h3 class='text-center text-3xl'>Upcoming Events</h3>
       <div class='grid grid-cols-1 gap-4 md:grid-cols-2'>
         <div class='flex gap-6'>
-          <Image src={book_store_1} alt='Event Book Store' class='h-64 w-64' />
+          <Image
+            src={book_store_1}
+            alt='Event Book Store'
+            class='h-64 w-64'
+            format='avif'
+          />
           <div class='flex flex-col gap-2'>
             <p>September 6, 2023</p>
             <h3 class='text-xl font-bold text-sky-800'>Book Signing</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-              soluta consectetur quam, ipsa nisi sapiente.
+              Join bestselling author Michael Shane for an enchanting book
+              signing event on September 6, 2023, where the magic of his words
+              comes to life.
             </p>
           </div>
         </div>
         <div class='flex gap-6'>
-          <Image src={book_store_2} alt='Event Book Store ' class='h-64 w-64' />
+          <Image
+            src={book_store_2}
+            alt='Event Book Store '
+            class='h-64 w-64'
+            format='avif'
+          />
           <div class='flex flex-col gap-2'>
             <p>November 6, 2023</p>
             <h3 class='text-xl font-bold text-sky-800'>Book Signing</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-              soluta consectetur quam, ipsa nisi sapiente.
+              Join bestselling author Michael Shane for an spellbinding book
+              signing event on November 6, 2023, where the magic of his words
+              comes to life.
             </p>
           </div>
         </div>

@@ -6,10 +6,10 @@ import GridContainer from '~/components/ui/grid-container.astro'
 import { SITE_TITLE_BOOKS } from '~/consts'
 
 import {
-  book_dorian_gray,
-  book_goal_planner,
-  book_psychology_money,
-  book_two_towers,
+  castle_in_the_sky,
+  lost_at_sea,
+  magic_bonsai,
+  money_tree,
 } from '~/assets'
 ---
 
@@ -20,20 +20,20 @@ import {
       <GridContainer>
         <Fragment slot='section-1'>
           <Image
-            src={book_psychology_money}
+            src={lost_at_sea}
             alt='WDL Logo'
             class='h-96 w-auto'
+            format='avif'
           />
         </Fragment>
         <Fragment slot='section-2'>
-          <p class='gradient-text text-base font-bold'>
-            The Psychology of Money
-          </p>
+          <p class='gradient-text text-base font-bold'>Lost At Sea</p>
           <p class='text-sm text-slate-800'>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
-            facere autem est alias nisi corrupti dicta, a consequuntur
-            laboriosam ab ipsa molestiae reiciendis delectus, commodi natus
-            adipisci sequi vel? Ipsam.
+            In Lost At Sea, follow the fearless adventurer Ferris Franklin as he
+            embarks on an epic journey across treacherous oceans and uncharted
+            territories. With the wind at his back and a heart full of courage,
+            Ferris sets sail to unravel mysteries, encounter mythical creatures,
+            and discover hidden realms.
           </p>
           <button
             class='rounded-full bg-p300 px-4 py-2 font-bold text-white hover:bg-p500'
@@ -44,17 +44,21 @@ import {
       </GridContainer>
       <GridContainer direction='lg:flex-row'>
         <Fragment slot='section-1'>
-          <Image src={book_dorian_gray} alt='WDL Logo' class='h-96 w-auto' />
+          <Image
+            src={magic_bonsai}
+            alt='WDL Logo'
+            class='h-96 w-auto'
+            format='avif'
+          />
         </Fragment>
         <Fragment slot='section-2'>
-          <p class='gradient-text text-base font-bold'>
-            The Picture of Dorian Gray
-          </p>
+          <p class='gradient-text text-base font-bold'>Magic Bonsai</p>
           <p class='text-sm text-slate-800'>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
-            facere autem est alias nisi corrupti dicta, a consequuntur
-            laboriosam ab ipsa molestiae reiciendis delectus, commodi natus
-            adipisci sequi vel? Ipsam.
+            In Magic Bonsai, Ferris Franklin stumbles upon an ancient bonsai
+            tree hidden in the heart of an enchanted forest, unleashing a world
+            of wonder and mysticism. As he tends to this magical masterpiece, he
+            unveils its secrets, embarking on a mesmerizing journey that
+            transcends the boundaries of reality and imagination.
           </p>
           <button
             class='rounded-full bg-p300 px-4 py-2 font-bold text-white hover:bg-p500'
@@ -65,15 +69,22 @@ import {
       </GridContainer>
       <GridContainer>
         <Fragment slot='section-1'>
-          <Image src={book_goal_planner} alt='WDL Logo' class='h-96 w-auto' />
+          <Image
+            src={castle_in_the_sky}
+            alt='WDL Logo'
+            class='h-96 w-auto'
+            format='avif'
+          />
         </Fragment>
         <Fragment slot='section-2'>
-          <p class='gradient-text text-base font-bold'>Goal Planner</p>
+          <p class='gradient-text text-base font-bold'>Castle In The Sky</p>
           <p class='text-sm text-slate-800'>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
-            facere autem est alias nisi corrupti dicta, a consequuntur
-            laboriosam ab ipsa molestiae reiciendis delectus, commodi natus
-            adipisci sequi vel? Ipsam.
+            In Castle In The Sky, Ferris Franklin's insatiable curiosity propels
+            him to embark on an awe-inspiring adventure that takes him soaring
+            into the sky, where an ethereal castle beckons. As he ascends
+            through the clouds, Ferris unravels the castle's mysteries,
+            encountering fantastical beings and unlocking the secrets of a realm
+            suspended above the world.
           </p>
           <button
             class='rounded-full bg-p300 px-4 py-2 font-bold text-white hover:bg-p500'
@@ -84,15 +95,21 @@ import {
       </GridContainer>
       <GridContainer direction='lg:flex-row'>
         <Fragment slot='section-1'>
-          <Image src={book_two_towers} alt='WDL Logo' class='h-96 w-auto' />
+          <Image
+            src={money_tree}
+            alt='WDL Logo'
+            class='h-96 w-auto'
+            format='avif'
+          />
         </Fragment>
         <Fragment slot='section-2'>
-          <p class='gradient-text text-base font-bold'>The Two Towers</p>
+          <p class='gradient-text text-base font-bold'>Money Tree</p>
           <p class='text-sm text-slate-800'>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
-            facere autem est alias nisi corrupti dicta, a consequuntur
-            laboriosam ab ipsa molestiae reiciendis delectus, commodi natus
-            adipisci sequi vel? Ipsam.
+            In "Money Tree," Ferris Franklin's life takes an unexpected turn
+            when he stumbles upon a mysterious tree that bears currency instead
+            of leaves. As Ferris grapples with newfound wealth, he finds himself
+            entangled in a captivating adventure that explores the complexities
+            of fortune and the true value of dreams.
           </p>
           <button
             class='rounded-full bg-p300 px-4 py-2 font-bold text-white hover:bg-p500'
